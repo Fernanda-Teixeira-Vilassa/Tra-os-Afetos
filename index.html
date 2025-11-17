@@ -1,0 +1,144 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traços & Afetos - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="images/logo.png" alt="Traços & Afetos" class="logo">
+    <h1>Traços & Afetos</h1>
+    <p>Traços que encantam, afetos que eternizam.</p>
+  </header>
+
+  <!-- SOBRE -->
+  <section class="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+      A Traços & Afetos nasceu do amor pelos detalhes e da vontade de transformar sentimentos em experiências inesquecíveis.
+      Aqui cada criação é feita com o coração.
+    </p>
+    <img src="images/larissa.png" alt="Larissa" class="Larissa">
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos">
+    <h2>O que Criamos com Amor</h2>
+
+    <div class="cards">
+
+      <!-- CARD 1 -->
+      <a href="convites.html" class="card" style="text-decoration:none; color:inherit;">
+        <img src="images/convites.jpg" alt="Convites">
+        <h3>Convites</h3>
+        <p>Modelos digitais e impressos feitos com afeto.</p>
+      </a>
+
+      <!-- CARD 2 -->
+      <a href="topodebolo.html" class="card" style="text-decoration:none; color:inherit;">
+        <img src="images/topo.jpg" alt="Topo de Bolo">
+        <h3>Topos de Bolo</h3>
+        <p>Arte decorativa personalizada para momentos especiais.</p>
+      </a>
+
+      <!-- CARD 3 -->
+      <a href="surpresas.html" class="card" style="text-decoration:none; color:inherit;">
+        <img src="images/surpresas.jpg" alt="Surpresas Afetivas">
+        <h3>Surpresas + Organização Afetiva</h3>
+        <p>Kits personalizados, pedidos especiais e muito mais.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="valores">
+    <h2>Nossos Valores</h2>
+    <ul>
+      <li>Convite digital pronto — <strong>R$ 35</strong></li>
+      <li>Convite digital do zero — <strong>R$ 80</strong></li>
+      <li>Topo de bolo — <strong>R$ 20</strong></li>
+      <li>Caixa explosiva personalizada — <strong>R$ 150</strong></li>
+    </ul>
+  </section>
+
+  <!-- FORMULÁRIO DE ORÇAMENTO -->
+  <section class="section" id="contato">
+    <h2>Solicitar orçamento</h2>
+
+    <div class="contato-form">
+
+      <div class="form-group">
+        <label for="nome">Nome *</label>
+        <input id="nome" type="text" placeholder="Seu nome completo" required />
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone (WhatsApp) *</label>
+        <input id="telefone" type="text" placeholder="(DDD) 00000-0000" required />
+      </div>
+
+      <div class="form-group">
+        <label for="endereco">Endereço</label>
+        <input id="endereco" type="text" placeholder="Rua, número, bairro, cidade" />
+      </div>
+
+      <div class="form-group">
+        <label for="servico">Serviço desejado *</label>
+        <select id="servico" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="Convite digital pronto - R$35">Convite digital pronto - R$ 35,00</option>
+          <option value="Convite digital do zero - R$80">Convite digital do zero - R$ 80,00</option>
+          <option value="Topo de bolo - R$20">Topo de bolo - R$ 20,00</option>
+          <option value="Caixa explosiva personalizada - R$150">Caixa explosiva personalizada - R$ 150,00</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nomeEvento">Nome do evento</label>
+        <input id="nomeEvento" type="text" placeholder="Ex.: Casamento Ana & João" />
+      </div>
+
+      <div class="form-group">
+        <label for="dataEvento">Data do evento</label>
+        <input id="dataEvento" type="date" />
+      </div>
+
+      <div class="form-group">
+        <label for="horarioEvento">Horário</label>
+        <input id="horarioEvento" type="time" />
+      </div>
+
+      <div class="form-group">
+        <label for="tema">Tema / estilo desejado</label>
+        <input id="tema" type="text" placeholder="Ex.: rústico, floral, minimalista..." />
+      </div>
+
+      <div class="form-group">
+        <label for="detalhes">Detalhes do projeto</label>
+        <textarea id="detalhes" rows="4" placeholder="Conte como você imagina esse convite / surpresa, cores, frases especiais, etc."></textarea>
+      </div>
+
+      <button id="btnWhatsApp">Enviar via WhatsApp</button>
+      <p class="aviso">*Campos obrigatórios</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <a href="https://wa.me/5527998372584" target="_blank">WhatsApp: (27) 99837-2584</a> ·
+      <a href="https://instagram.com/tracos.e.afetos" target="_blank">Instagram: @tracos.e.afetos</a> ·
+      <a href="mailto:tracoseafetos@gmail.com">Email: tracoseafetos@gmail.com</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
