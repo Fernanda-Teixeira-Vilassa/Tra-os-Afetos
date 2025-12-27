@@ -40,9 +40,13 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* LOGO */
 .logo {
-  width: 140px;
-  filter: drop-shadow(0 5px 10px #0002);
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto 10px;
+  display: block;
+  filter: drop-shadow(0 6px 12px #0003);
 }
 
 .hero h1 {
@@ -76,6 +80,16 @@ h2 {
   margin: auto;
   font-size: 1.15rem;
   padding: 0 20px;
+}
+
+/* IMAGEM EQUIPE */
+.Larissa {
+  display: block;
+  margin: 30px auto;
+  max-width: 320px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: var(--sombra);
 }
 
 /* =====================
@@ -259,9 +273,25 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 { font-size: 2rem; }
-  .hero p { font-size: 1rem; }
-  h2 { font-size: 1.8rem; }
+  .logo {
+    width: 170px;
+  }
+
+  .Larissa {
+    max-width: 260px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
 
   .valores li {
     flex-direction: column;
