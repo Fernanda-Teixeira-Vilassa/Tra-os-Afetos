@@ -1,30 +1,33 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Traços & Afetos - Portfólio</title>
+  <title>Traços & Afetos - Cooperativa Criativa</title>
+
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- HERO -->
   <header class="hero">
     <img src="images/logo.png" alt="Traços & Afetos" class="logo">
     <h1>Traços & Afetos</h1>
-    <p>Traços que encantam, afetos que eternizam.</p>
+    <p>Uma cooperativa criativa onde cada detalhe importa.</p>
   </header>
 
   <!-- SOBRE -->
   <section class="sobre">
     <h2>Sobre Nós</h2>
     <p>
-      A Traços & Afetos nasceu do amor pelos detalhes e da vontade de transformar sentimentos em experiências inesquecíveis.
-      Aqui cada criação é feita com o coração.
+      A <strong>Traços & Afetos</strong> é uma cooperativa que nasceu do amor pelos detalhes
+      e do trabalho feito a muitas mãos. Atuamos na área gráfica e também na produção de
+      delícias afetivas, como bolos, chup chup gourmet e o nosso Pegue e Monte.
+      Tudo é feito com carinho, cuidado e atenção para transformar momentos em memórias inesquecíveis.
     </p>
-    <img src="images/larissa.png" alt="Larissa" class="Larissa">
+    <img src="images/larissa.png" alt="Equipe Traços & Afetos" class="Larissa">
   </section>
 
   <!-- SERVIÇOS -->
@@ -54,6 +57,27 @@
         <p>Kits personalizados, pedidos especiais e muito mais.</p>
       </a>
 
+      <!-- CARD 4 -->
+       <a href="bolo.html" class="card" style="text-decoration:none; color:inherit;">
+        <img src="images/bolo.jpg" alt="Bolos Artesanais">
+        <h3>Bolo artesanal</h3>
+        <p>Bolos artesanais preparados com carinho para adoçar momentos especiais.</p>
+       </a>
+
+      <!-- CARD 5 -->
+       <a href="chupchupgourmet.html" class="card" style="text-decoration:none; color:inherit;">
+        <img src="images/chupchup.jpg" alt="Chup Chup Gourmet">
+        <h3>Chup Chup Gourmet</h3>
+        <p>Sabores especiais feitos com cuidado e muito afeto.</p>
+       </a>
+
+      <!-- CARD 6 -->
+      <a href="peguemonte.html" class="card" style="text-decoration:none; color:inherit;">
+        <img src="images/pegueemonte.jpg" alt="Pegue e Monte">
+        <h3>Pegue e Monte</h3>
+        <p>Você escolhe, combina e cria do seu jeitinho.</p>
+      </a>
+
     </div>
   </section>
 
@@ -61,10 +85,13 @@
   <section class="valores">
     <h2>Nossos Valores</h2>
     <ul>
-      <li>Convite digital pronto — <strong>R$ 35</strong></li>
-      <li>Convite digital do zero — <strong>R$ 80</strong></li>
-      <li>Topo de bolo — <strong>R$ 20</strong></li>
-      <li>Caixa explosiva personalizada — <strong>R$ 150</strong></li>
+      <li>Convite digital pronto<strong>R$ 35</strong></li>
+      <li>Convite digital do zero<strong>R$ 80</strong></li>
+      <li>Topo de bolo<strong>R$ 20</strong></li>
+      <li>Caixa explosiva personalizada<strong>R$ 150</strong></li>
+      <li>Bolo artesanal<strong>sob consulta</strong></li>
+      <li>Chup Chup Gourmet<strong>sob consulta</strong></li>
+      <li>Pegue e Monte<strong>sob consulta</strong></li>
     </ul>
   </section>
 
@@ -97,6 +124,9 @@
           <option value="Convite digital do zero - R$80">Convite digital do zero - R$ 80,00</option>
           <option value="Topo de bolo - R$20">Topo de bolo - R$ 20,00</option>
           <option value="Caixa explosiva personalizada - R$150">Caixa explosiva personalizada - R$ 150,00</option>
+          <option value="Bolo artesanal">Bolo artesanal - Sob consulta</option>
+          <option value="Chup Chup Gourmet">Chup Chup Gourmet - Sob consulta</option>
+          <option value="Pegue e Monte">Pegue e Monte - Sob consulta</option>
         </select>
       </div>
 
@@ -122,7 +152,7 @@
 
       <div class="form-group">
         <label for="detalhes">Detalhes do projeto</label>
-        <textarea id="detalhes" rows="4" placeholder="Conte como você imagina esse convite / surpresa, cores, frases especiais, etc."></textarea>
+        <textarea id="detalhes" rows="4" placeholder="Conte como você imagina o projeto, cores, sabores, frases especiais, etc."></textarea>
       </div>
 
       <button id="btnWhatsApp">Enviar via WhatsApp</button>

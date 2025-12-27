@@ -10,7 +10,9 @@
   --marron: #ac6730;
 }
 
-/* GERAL */
+/* =====================
+   GERAL
+===================== */
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--fundo);
@@ -20,7 +22,9 @@ body {
   overflow-x: hidden;
 }
 
-/* HERO */
+/* =====================
+   HERO
+===================== */
 .hero {
   text-align: center;
   padding: 90px 20px;
@@ -32,8 +36,8 @@ body {
 }
 
 @keyframes fadeDown {
-  from {opacity: 0; transform: translateY(-20px);}
-  to {opacity: 1; transform: translateY(0);}
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .logo {
@@ -44,7 +48,6 @@ body {
 .hero h1 {
   font-size: 2.8rem;
   margin: 15px 0 5px;
-  color: var(--verde-escuro);
   font-family: 'Playfair Display', serif;
 }
 
@@ -53,17 +56,20 @@ body {
   opacity: 0.85;
 }
 
-/* TÍTULOS */
+/* =====================
+   TÍTULOS
+===================== */
 h2 {
   font-family: 'Playfair Display', serif;
   color: var(--marron);
   font-size: 2.2rem;
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 25px;
+  margin: 70px 0 25px;
 }
 
-/* SOBRE */
+/* =====================
+   SOBRE
+===================== */
 .sobre p {
   text-align: center;
   max-width: 900px;
@@ -72,10 +78,12 @@ h2 {
   padding: 0 20px;
 }
 
-/* CARDS */
+/* =====================
+   CARDS / SERVIÇOS
+===================== */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   padding: 20px;
   max-width: 1200px;
@@ -112,17 +120,46 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* VALORES */
+.card p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* =====================
+   VALORES
+===================== */
+.valores {
+  padding: 50px 20px;
+}
+
 .valores ul {
   list-style: none;
   padding: 0;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
-  font-size: 1.1rem;
-  text-align: center;
 }
 
-/* FORMULÁRIO */
+.valores li {
+  background: var(--branco);
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--verde);
+  box-shadow: var(--sombra);
+  font-size: 1.05rem;
+}
+
+.valores li strong {
+  color: var(--dourado);
+  font-weight: 600;
+}
+
+/* =====================
+   FORMULÁRIO
+===================== */
 .contato-form {
   max-width: 800px;
   margin: 50px auto;
@@ -139,25 +176,33 @@ h2 {
 
 .form-group label {
   font-weight: 600;
-  color: var(--verde-escuro);
+  display: block;
+  margin-bottom: 5px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 14px;
   border-radius: 12px;
   border: 2px solid var(--verde);
   background: #fbfdf9;
   transition: .2s;
+  font-family: 'Poppins', sans-serif;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   border-color: var(--dourado);
   outline: none;
   background: var(--dourado-claro);
 }
 
-/* BOTÃO */
+/* =====================
+   BOTÃO
+===================== */
 button {
   background: var(--dourado);
   color: white;
@@ -177,13 +222,14 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* FOOTER */
+/* =====================
+   FOOTER
+===================== */
 footer {
   text-align: center;
   padding: 30px;
   background: var(--verde-claro);
   margin-top: 70px;
-  color: var(--verde-escuro);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   box-shadow: var(--sombra);
@@ -199,11 +245,32 @@ footer a:hover {
   color: var(--dourado);
 }
 
-/* MOBILE */
+/* =====================
+   RESPONSIVO
+===================== */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 600px) {
-  .hero h1 {font-size: 2rem;}
-  .hero p {font-size: 1rem;}
-  h2 {font-size: 1.8rem;}
-  .contato-form {padding: 20px;}
-  button {font-size: 1rem; padding: 14px;}
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  h2 { font-size: 1.8rem; }
+
+  .valores li {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 14px;
+  }
 }
